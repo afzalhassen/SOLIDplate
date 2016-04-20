@@ -75,6 +75,7 @@
       <Link>SOLIDplate.pfx</Link>
     </None>
     <None Include="packages.config" />
+    <None Include="SOLIDplate.Repository.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SOLIDplate.Common.Portable">

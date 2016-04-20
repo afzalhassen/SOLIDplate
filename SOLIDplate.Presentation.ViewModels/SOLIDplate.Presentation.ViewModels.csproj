@@ -74,6 +74,7 @@
       <Link>SOLIDplate.pfx</Link>
     </None>
     <None Include="packages.config" />
+    <None Include="SOLIDplate.Presentation.ViewModels.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SOLIDplate.Presentation.ViewModels.Interfaces">

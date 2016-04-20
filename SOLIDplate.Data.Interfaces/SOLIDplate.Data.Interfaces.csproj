@@ -66,6 +66,7 @@
     <None Include="..\SOLIDplate.pfx">
       <Link>SOLIDplate.pfx</Link>
     </None>
+    <None Include="SOLIDplate.Data.Interfaces.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\SOLIDplate.AssemblyInfo.cs">

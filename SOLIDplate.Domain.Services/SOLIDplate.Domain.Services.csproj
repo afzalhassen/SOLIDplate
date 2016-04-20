@@ -101,6 +101,7 @@
       <Link>SOLIDplate.pfx</Link>
     </None>
     <None Include="packages.config" />
+    <None Include="SOLIDplate.Domain.Services.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

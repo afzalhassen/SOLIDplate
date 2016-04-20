@@ -69,6 +69,7 @@
       <Link>SOLIDplate.pfx</Link>
     </None>
     <None Include="packages.config" />
+    <None Include="SOLIDplate.Services.Clients.SignalR.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\SOLIDplate.AssemblyInfo.cs">
