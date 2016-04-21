@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\SOLIDplate.pfx</AssemblyOriginatorKeyFile>
@@ -60,10 +60,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SOLIDplate.Domain.Integration.Services.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Domain.Integration.Services.Interfaces.1.0.0.20247\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Integration.Services.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Domain.Integration.Services.Interfaces.1.0.0.27011\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Integration.Services.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="SOLIDplate.Services.Clients.Wcf.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Services.Clients.Wcf.Interfaces.1.0.0.20252\lib\net45\SOLIDplate.Services.Clients.Wcf.Interfaces.dll</HintPath>
+    <Reference Include="SOLIDplate.Services.Clients.Wcf.Interfaces, Version=1.0.0.27043, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Services.Clients.Wcf.Interfaces.1.0.0.27043\lib\net45\SOLIDplate.Services.Clients.Wcf.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

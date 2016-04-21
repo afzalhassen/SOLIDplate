@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\SOLIDplate.pfx</AssemblyOriginatorKeyFile>
@@ -68,13 +68,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="SOLIDplate.Domain.Integration.Services.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Domain.Integration.Services.Interfaces.1.0.0.20247\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Integration.Services.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Domain.Integration.Services.Interfaces.1.0.0.27011\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Integration.Services.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="SOLIDplate.Domain.Services.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Domain.Services.Interfaces.1.0.0.20248\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Services.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Domain.Services.Interfaces.1.0.0.27020\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Services.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="SOLIDplate.Services.Clients.SignalR.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Services.Clients.SignalR.Interfaces.1.0.0.20251\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Services.Clients.SignalR.Interfaces.dll</HintPath>
+    <Reference Include="SOLIDplate.Services.Clients.SignalR.Interfaces, Version=1.0.0.27037, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Services.Clients.SignalR.Interfaces.1.0.0.27037\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Services.Clients.SignalR.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

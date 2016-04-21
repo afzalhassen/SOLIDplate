@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\SOLIDplate.pfx</AssemblyOriginatorKeyFile>
@@ -72,14 +72,15 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Data.Services.EntityFramework.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Data.Services.EntityFramework.Interfaces.1.0.0.20247\lib\net45\SOLIDplate.Data.Services.EntityFramework.Interfaces.dll</HintPath>
+    <Reference Include="SOLIDplate.Data.Services.EntityFramework.Interfaces, Version=1.0.0.27011, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Data.Services.EntityFramework.Interfaces.1.0.0.27011\lib\net45\SOLIDplate.Data.Services.EntityFramework.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SOLIDplate.Domain.Entities">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.1.0.0.20246\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Domain.Entities.1.0.0.27004\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.dll</HintPath>
     </Reference>
     <Reference Include="SOLIDplate.Domain.Entities.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.Interfaces.1.0.0.20245\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Domain.Entities.Interfaces.1.0.0.27001\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />

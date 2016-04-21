@@ -39,7 +39,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\SOLIDplate.pfx</AssemblyOriginatorKeyFile>
@@ -79,7 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SOLIDplate.Repository.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Repository.Interfaces.1.0.0.20247\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Repository.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Repository.Interfaces.1.0.0.27018\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Repository.Interfaces.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

@@ -40,7 +40,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\SOLIDplate.pfx</AssemblyOriginatorKeyFile>
@@ -89,10 +89,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="SOLIDplate.Common.Portable">
-      <HintPath>..\packages\SOLIDplate.Common.Portable.1.0.0.20250\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Common.Portable.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Common.Portable.1.0.0.27033\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Common.Portable.dll</HintPath>
     </Reference>
-    <Reference Include="SOLIDplate.Services.Clients.SignalR.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Services.Clients.SignalR.Interfaces.1.0.0.20251\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Services.Clients.SignalR.Interfaces.dll</HintPath>
+    <Reference Include="SOLIDplate.Services.Clients.SignalR.Interfaces, Version=1.0.0.27037, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Services.Clients.SignalR.Interfaces.1.0.0.27037\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Services.Clients.SignalR.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>

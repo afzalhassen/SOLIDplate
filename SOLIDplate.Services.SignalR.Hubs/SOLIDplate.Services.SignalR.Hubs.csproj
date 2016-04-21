@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\SOLIDplate.pfx</AssemblyOriginatorKeyFile>
@@ -79,8 +79,9 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Services.SignalR.Hubs.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Services.SignalR.Hubs.Interfaces.1.0.0.20253\lib\net45\SOLIDplate.Services.SignalR.Hubs.Interfaces.dll</HintPath>
+    <Reference Include="SOLIDplate.Services.SignalR.Hubs.Interfaces, Version=1.0.0.27051, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Services.SignalR.Hubs.Interfaces.1.0.0.27051\lib\net45\SOLIDplate.Services.SignalR.Hubs.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

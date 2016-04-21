@@ -39,7 +39,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\SOLIDplate.pfx</AssemblyOriginatorKeyFile>
@@ -77,8 +77,9 @@
     <None Include="SOLIDplate.Presentation.ViewModels.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="SOLIDplate.Presentation.ViewModels.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Presentation.ViewModels.Interfaces.1.0.0.20252\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Presentation.ViewModels.Interfaces.dll</HintPath>
+    <Reference Include="SOLIDplate.Presentation.ViewModels.Interfaces, Version=1.0.0.27046, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Presentation.ViewModels.Interfaces.1.0.0.27046\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Presentation.ViewModels.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

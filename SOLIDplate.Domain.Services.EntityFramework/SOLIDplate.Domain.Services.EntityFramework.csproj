@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\SOLIDplate.pfx</AssemblyOriginatorKeyFile>
@@ -71,35 +71,40 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Common">
-      <HintPath>..\packages\SOLIDplate.Common.1.0.0.20250\lib\net45\SOLIDplate.Common.dll</HintPath>
+    <Reference Include="SOLIDplate.Common, Version=1.0.0.27034, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Common.1.0.0.27034\lib\net45\SOLIDplate.Common.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Common.Portable">
-      <HintPath>..\packages\SOLIDplate.Common.Portable.1.0.0.20250\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Common.Portable.dll</HintPath>
+    <Reference Include="SOLIDplate.Common.Portable, Version=1.0.0.27033, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Common.Portable.1.0.0.27033\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Common.Portable.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SOLIDplate.Data.EntityFramework.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Data.EntityFramework.Interfaces.1.0.0.20246\lib\net45\SOLIDplate.Data.EntityFramework.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Data.EntityFramework.Interfaces.1.0.0.27006\lib\net45\SOLIDplate.Data.EntityFramework.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="SOLIDplate.Data.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Data.Interfaces.1.0.0.20250\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Data.Interfaces.dll</HintPath>
+    <Reference Include="SOLIDplate.Data.Interfaces, Version=1.0.0.27030, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Data.Interfaces.1.0.0.27030\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Data.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SOLIDplate.Data.Services.EntityFramework.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Data.Services.EntityFramework.Interfaces.1.0.0.20247\lib\net45\SOLIDplate.Data.Services.EntityFramework.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Data.Services.EntityFramework.Interfaces.1.0.0.27011\lib\net45\SOLIDplate.Data.Services.EntityFramework.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="SOLIDplate.Domain.Entities">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.1.0.0.20246\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Domain.Entities.1.0.0.27004\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.dll</HintPath>
     </Reference>
     <Reference Include="SOLIDplate.Domain.Entities.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.Interfaces.1.0.0.20245\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Domain.Entities.Interfaces.1.0.0.27001\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="SOLIDplate.Domain.Services">
-      <HintPath>..\packages\SOLIDplate.Domain.Services.1.0.0.20249\lib\net45\SOLIDplate.Domain.Services.dll</HintPath>
+    <Reference Include="SOLIDplate.Domain.Services, Version=1.0.0.27024, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Domain.Services.1.0.0.27024\lib\net45\SOLIDplate.Domain.Services.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Domain.Services.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Domain.Services.Interfaces.1.0.0.20248\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Services.Interfaces.dll</HintPath>
+    <Reference Include="SOLIDplate.Domain.Services.Interfaces, Version=1.0.0.27020, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SOLIDplate.Domain.Services.Interfaces.1.0.0.27020\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Services.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SOLIDplate.Repository.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Repository.Interfaces.1.0.0.20247\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Repository.Interfaces.dll</HintPath>
+      <HintPath>..\packages\SOLIDplate.Repository.Interfaces.1.0.0.27018\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Repository.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
