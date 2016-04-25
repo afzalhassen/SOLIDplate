@@ -94,7 +94,6 @@
     <None Include="..\SOLIDplate.pfx">
       <Link>SOLIDplate.pfx</Link>
     </None>
-    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="SOLIDplate.Repository.EntityFramework.nuspec" />
   </ItemGroup>
