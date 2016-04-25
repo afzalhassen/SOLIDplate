@@ -68,16 +68,6 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Domain.Integration.Services.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Domain.Integration.Services.Interfaces.1.0.0.27011\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Integration.Services.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="SOLIDplate.Domain.Services.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Domain.Services.Interfaces.1.0.0.27020\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Services.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="SOLIDplate.Services.Clients.SignalR.Interfaces, Version=1.0.0.27037, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Services.Clients.SignalR.Interfaces.1.0.0.27037\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Services.Clients.SignalR.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
@@ -107,8 +97,23 @@
     <None Include="..\SOLIDplate.pfx">
       <Link>SOLIDplate.pfx</Link>
     </None>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="SOLIDplate.Services.WebApi.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Domain.Integration.Services.Interfaces\SOLIDplate.Domain.Integration.Services.Interfaces.csproj">
+      <Project>{361666BD-651C-41CB-88C3-5C7C45998DAE}</Project>
+      <Name>SOLIDplate.Domain.Integration.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Domain.Services.Interfaces\SOLIDplate.Domain.Services.Interfaces.csproj">
+      <Project>{3CDAD1DD-9E21-4C6C-9911-3B0456AAD720}</Project>
+      <Name>SOLIDplate.Domain.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Services.Clients.SignalR.Interfaces\SOLIDplate.Services.Clients.SignalR.Interfaces.csproj">
+      <Project>{A8B28CFC-17CD-4807-B12C-7CEE8859BC86}</Project>
+      <Name>SOLIDplate.Services.Clients.SignalR.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

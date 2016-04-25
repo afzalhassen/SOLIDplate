@@ -97,10 +97,12 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Domain.Entities.Interfaces, Version=1.0.0.27001, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.Interfaces.1.0.0.27001\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Domain.Entities.Interfaces\SOLIDplate.Domain.Entities.Interfaces.csproj">
+      <Project>{5BE9C8AA-A9A4-4D5D-97FC-C6DB5D6EAB4F}</Project>
+      <Name>SOLIDplate.Domain.Entities.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

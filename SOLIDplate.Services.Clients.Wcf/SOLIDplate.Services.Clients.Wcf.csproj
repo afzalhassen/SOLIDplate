@@ -60,10 +60,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SOLIDplate.Services.Clients.Wcf.Interfaces, Version=1.0.0.27043, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Services.Clients.Wcf.Interfaces.1.0.0.27043\lib\net45\SOLIDplate.Services.Clients.Wcf.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
@@ -86,6 +82,12 @@
     </None>
     <None Include="packages.config" />
     <None Include="SOLIDplate.Services.Clients.Wcf.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Services.Clients.Wcf.Interfaces\SOLIDplate.Services.Clients.Wcf.Interfaces.csproj">
+      <Project>{0BE31DEC-2AB8-4CB7-945B-2FC1B72A2C83}</Project>
+      <Name>SOLIDplate.Services.Clients.Wcf.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

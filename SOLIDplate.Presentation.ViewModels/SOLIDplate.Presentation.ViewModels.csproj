@@ -77,10 +77,10 @@
     <None Include="SOLIDplate.Presentation.ViewModels.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="SOLIDplate.Presentation.ViewModels.Interfaces, Version=1.0.0.27046, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Presentation.ViewModels.Interfaces.1.0.0.27046\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Presentation.ViewModels.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+    <ProjectReference Include="..\SOLIDplate.Presentation.ViewModels.Interfaces\SOLIDplate.Presentation.ViewModels.Interfaces.csproj">
+      <Project>{4F582199-A7A3-42C8-BE51-9AB694293F55}</Project>
+      <Name>SOLIDplate.Presentation.ViewModels.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <PropertyGroup>

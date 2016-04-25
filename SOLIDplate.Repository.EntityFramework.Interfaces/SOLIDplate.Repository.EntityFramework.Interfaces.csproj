@@ -78,9 +78,10 @@
     <None Include="SOLIDplate.Repository.EntityFramework.Interfaces.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="SOLIDplate.Repository.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Repository.Interfaces.1.0.0.27018\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Repository.Interfaces.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\SOLIDplate.Repository.Interfaces\SOLIDplate.Repository.Interfaces.csproj">
+      <Project>{f2ebd8c4-ef5c-4726-bd6e-3a125c77b0c6}</Project>
+      <Name>SOLIDplate.Repository.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <PropertyGroup>

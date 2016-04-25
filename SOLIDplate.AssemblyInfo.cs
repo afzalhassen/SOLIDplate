@@ -6,6 +6,7 @@ using System.Resources;
 // associated with an assembly.
 [assembly: AssemblyCompany("Afzal Hassen")]
 [assembly: AssemblyCopyright("Copyright © Afzal Hassen 2016")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("SOLIDplate")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en")]
+[assembly: AssemblyVersion("1.0.0.*")]

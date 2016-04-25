@@ -80,10 +80,6 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Services.SignalR.Hubs.Interfaces, Version=1.0.0.27051, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Services.SignalR.Hubs.Interfaces.1.0.0.27051\lib\net45\SOLIDplate.Services.SignalR.Hubs.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -104,8 +100,15 @@
     <None Include="..\SOLIDplate.pfx">
       <Link>SOLIDplate.pfx</Link>
     </None>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="SOLIDplate.Services.SignalR.Hubs.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Services.SignalR.Hubs.Interfaces\SOLIDplate.Services.SignalR.Hubs.Interfaces.csproj">
+      <Project>{BB6FDE49-B321-47AD-B6AA-804513DB4463}</Project>
+      <Name>SOLIDplate.Services.SignalR.Hubs.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

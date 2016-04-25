@@ -73,29 +73,11 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Data.Interfaces, Version=1.0.0.27030, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Data.Interfaces.1.0.0.27030\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Data.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Data.Services.EntityFramework.Interfaces, Version=1.0.0.27011, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Data.Services.EntityFramework.Interfaces.1.0.0.27011\lib\net45\SOLIDplate.Data.Services.EntityFramework.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Domain.Entities, Version=1.0.0.27004, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.1.0.0.27004\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Domain.Entities.Interfaces, Version=1.0.0.27001, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.Interfaces.1.0.0.27001\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +96,16 @@
     </None>
     <None Include="packages.config" />
     <None Include="SOLIDplate.Data.EntityFramework.Interfaces.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Data.Interfaces\SOLIDplate.Data.Interfaces.csproj">
+      <Project>{bf2bc546-ae84-48b3-b341-7629dca583e2}</Project>
+      <Name>SOLIDplate.Data.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Data.Services.EntityFramework.Interfaces\SOLIDplate.Data.Services.EntityFramework.Interfaces.csproj">
+      <Project>{F3F889BD-94BB-413C-9B7B-BDD9C04A9B1A}</Project>
+      <Name>SOLIDplate.Data.Services.EntityFramework.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

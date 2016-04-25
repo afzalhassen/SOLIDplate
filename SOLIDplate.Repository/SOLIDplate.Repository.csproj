@@ -78,17 +78,18 @@
     <None Include="SOLIDplate.Repository.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="SOLIDplate.Common.Portable, Version=1.0.0.27033, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Common.Portable.1.0.0.27033\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Common.Portable.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Data.Interfaces, Version=1.0.0.27030, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Data.Interfaces.1.0.0.27030\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Data.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Repository.Interfaces">
-      <HintPath>..\packages\SOLIDplate.Repository.Interfaces.1.0.0.27018\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Repository.Interfaces.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\SOLIDplate.Common.Portable\SOLIDplate.Common.Portable.csproj">
+      <Project>{f393bbc4-3a16-4c1d-b978-429ec48b771f}</Project>
+      <Name>SOLIDplate.Common.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Data.Interfaces\SOLIDplate.Data.Interfaces.csproj">
+      <Project>{BF2BC546-AE84-48B3-B341-7629DCA583E2}</Project>
+      <Name>SOLIDplate.Data.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Repository.Interfaces\SOLIDplate.Repository.Interfaces.csproj">
+      <Project>{F2EBD8C4-EF5C-4726-BD6E-3A125C77B0C6}</Project>
+      <Name>SOLIDplate.Repository.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <PropertyGroup>

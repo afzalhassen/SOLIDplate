@@ -73,30 +73,6 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SOLIDplate.Data.EntityFramework.Configurations, Version=1.0.0.27010, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Data.EntityFramework.Configurations.1.0.0.27010\lib\net45\SOLIDplate.Data.EntityFramework.Configurations.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Data.EntityFramework.Interfaces, Version=1.0.0.27006, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Data.EntityFramework.Interfaces.1.0.0.27006\lib\net45\SOLIDplate.Data.EntityFramework.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Data.Interfaces, Version=1.0.0.27030, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Data.Interfaces.1.0.0.27030\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Data.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Data.Services.EntityFramework.Interfaces, Version=1.0.0.27011, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Data.Services.EntityFramework.Interfaces.1.0.0.27011\lib\net45\SOLIDplate.Data.Services.EntityFramework.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Domain.Entities, Version=1.0.0.27004, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.1.0.0.27004\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SOLIDplate.Domain.Entities.Interfaces, Version=1.0.0.27001, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SOLIDplate.Domain.Entities.Interfaces.1.0.0.27001\lib\portable-net45+win+wp80+MonoAndroid10+xamarinios10+MonoTouch10\SOLIDplate.Domain.Entities.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -121,8 +97,35 @@
     <None Include="..\SOLIDplate.pfx">
       <Link>SOLIDplate.pfx</Link>
     </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="SOLIDplate.Data.EntityFramework.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Data.EntityFramework.Configurations\SOLIDplate.Data.EntityFramework.Configurations.csproj">
+      <Project>{8874E05B-489A-488B-BCB9-10A7E8DE2445}</Project>
+      <Name>SOLIDplate.Data.EntityFramework.Configurations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Data.EntityFramework.Interfaces\SOLIDplate.Data.EntityFramework.Interfaces.csproj">
+      <Project>{231484DC-BC4F-49AF-9219-E4C1DCE185FC}</Project>
+      <Name>SOLIDplate.Data.EntityFramework.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Data.Interfaces\SOLIDplate.Data.Interfaces.csproj">
+      <Project>{bf2bc546-ae84-48b3-b341-7629dca583e2}</Project>
+      <Name>SOLIDplate.Data.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Data.Services.EntityFramework.Interfaces\SOLIDplate.Data.Services.EntityFramework.Interfaces.csproj">
+      <Project>{F3F889BD-94BB-413C-9B7B-BDD9C04A9B1A}</Project>
+      <Name>SOLIDplate.Data.Services.EntityFramework.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Domain.Entities.Interfaces\SOLIDplate.Domain.Entities.Interfaces.csproj">
+      <Project>{5be9c8aa-a9a4-4d5d-97fc-c6db5d6eab4f}</Project>
+      <Name>SOLIDplate.Domain.Entities.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Domain.Entities\SOLIDplate.Domain.Entities.csproj">
+      <Project>{7502EBCA-9760-4817-A6C9-6C21E95F58D2}</Project>
+      <Name>SOLIDplate.Domain.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
