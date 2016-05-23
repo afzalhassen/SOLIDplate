@@ -4,29 +4,29 @@ using System;
 
 namespace SOLIDplate.Unity.SignalR
 {
-	public class SignalRUnityHubActivator : IHubActivator
-	{
-		private readonly IUnityContainer _container;
+    public class SignalRUnityHubActivator : IHubActivator
+    {
+        private readonly IUnityContainer _container;
 
-		public SignalRUnityHubActivator(IUnityContainer container)
-		{
-			_container = container;
-		}
+        public SignalRUnityHubActivator(IUnityContainer container)
+        {
+            _container = container;
+        }
 
-		public IHub Create(HubDescriptor descriptor)
-		{
-			if (descriptor == null)
-			{
-				throw new ArgumentNullException("descriptor");
-			}
+        public IHub Create(HubDescriptor descriptor)
+        {
+            if (descriptor == null)
+            {
+                throw new ArgumentNullException(nameof(descriptor));
+            }
 
-			if (descriptor.HubType == null)
-			{
-				return null;
-			}
+            if (descriptor.HubType == null)
+            {
+                return null;
+            }
 
-			var hub = _container.Resolve(descriptor.HubType) ?? Activator.CreateInstance(descriptor.HubType);
-			return hub as IHub;
-		}
-	}
+            var hub = _container.Resolve(descriptor.HubType) ?? Activator.CreateInstance(descriptor.HubType);
+            return hub as IHub;
+        }
+    }
 }

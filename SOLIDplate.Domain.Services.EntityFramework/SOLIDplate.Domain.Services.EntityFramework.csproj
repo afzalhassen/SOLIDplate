@@ -112,6 +112,10 @@
       <Project>{7502ebca-9760-4817-a6c9-6c21e95f58d2}</Project>
       <Name>SOLIDplate.Domain.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Domain.Services.Interfaces\SOLIDplate.Domain.Services.Interfaces.csproj">
+      <Project>{3CDAD1DD-9E21-4C6C-9911-3B0456AAD720}</Project>
+      <Name>SOLIDplate.Domain.Services.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SOLIDplate.Domain.Services\SOLIDplate.Domain.Services.csproj">
       <Project>{c8e6f34a-24ad-41d4-8700-8ce479f95c50}</Project>
       <Name>SOLIDplate.Domain.Services</Name>
@@ -121,7 +125,7 @@
       <Name>SOLIDplate.Repository.EntityFramework.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\SOLIDplate.Repository.Interfaces\SOLIDplate.Repository.Interfaces.csproj">
-      <Project>{F2EBD8C4-EF5C-4726-BD6E-3A125C77B0C6}</Project>
+      <Project>{f2ebd8c4-ef5c-4726-bd6e-3a125c77b0c6}</Project>
       <Name>SOLIDplate.Repository.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>

@@ -69,7 +69,6 @@
     </Compile>
     <Compile Include="Address.cs" />
     <Compile Include="ComparisonOperator.cs" />
-    <Compile Include="Employee.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="EntityAudit.cs" />
     <Compile Include="EntityPropertyFilter.cs" />
@@ -83,7 +82,6 @@
     <Compile Include="ContactNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypeOfPhoneNumber.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\SOLIDplate.pfx">
