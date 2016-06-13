@@ -59,6 +59,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		PostBuildEvent.bat = PostBuildEvent.bat
 		PreBuildEvent.bat = PreBuildEvent.bat
 		SOLIDplate.Packages\PushToNuget.bat = SOLIDplate.Packages\PushToNuget.bat
+		SOLIDplate.Packages\RemovePreviousVersions.bat = SOLIDplate.Packages\RemovePreviousVersions.bat
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDplate.Application.Unity", "SOLIDplate.Application.Unity\SOLIDplate.Application.Unity.csproj", "{31D14DD3-90A4-47D7-B636-026F71C5728F}"
