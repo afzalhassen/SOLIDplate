@@ -73,19 +73,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\SOLIDplate.AssemblyInfo.cs">
       <Link>Properties\SOLIDplate.AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="DomainService.cs" />
     <Compile Include="EntityQueryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -97,6 +90,14 @@
     <None Include="SOLIDplate.Domain.Query.Services.EntityFramework.nuspec" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Common.Portable\SOLIDplate.Common.Portable.csproj">
+      <Project>{F393BBC4-3A16-4C1D-B978-429EC48B771F}</Project>
+      <Name>SOLIDplate.Common.Portable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Common\SOLIDplate.Common.csproj">
+      <Project>{C5B0E75D-E045-44D9-AE22-AA46E3E72D14}</Project>
+      <Name>SOLIDplate.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SOLIDplate.Domain.Query.Services.Interfaces\SOLIDplate.Domain.Query.Services.Interfaces.csproj">
       <Project>{06e04045-bb71-4459-a890-60ee6ce446da}</Project>
       <Name>SOLIDplate.Domain.Query.Services.Interfaces</Name>

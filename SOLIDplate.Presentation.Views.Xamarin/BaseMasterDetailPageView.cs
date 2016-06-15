@@ -1,11 +1,11 @@
+using SOLIDplate.Presentation.ViewModels;
 using System.ComponentModel;
 using System.Threading.Tasks;
-using SOLIDplate.Presentation.ViewModels;
 using Xamarin.Forms;
 
 namespace SOLIDplate.Presentation.Views.Xamarin
 {
-	public abstract class BaseMasterDetailPageView<TMasterDetailViewModel> : MasterDetailPage
+    public abstract class BaseMasterDetailPageView<TMasterDetailViewModel> : MasterDetailPage
 		where TMasterDetailViewModel : BaseViewModel, INotifyPropertyChanged
 	{
 		//protected readonly ActivityIndicator ActivityIndicator = new ActivityIndicator();

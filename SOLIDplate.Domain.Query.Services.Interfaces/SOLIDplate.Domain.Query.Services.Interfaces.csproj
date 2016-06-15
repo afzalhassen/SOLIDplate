@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="IDomainService.cs" />
     <Compile Include="IEntityQueryService.cs" />
+    <Compile Include="IQueryableDomainService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

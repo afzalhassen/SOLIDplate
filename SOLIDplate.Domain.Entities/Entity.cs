@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace SOLIDplate.Domain.Entities
 {
-	[DataContract(Name = "Entity", IsReference = true)]
+    [DataContract(Name = "Entity", IsReference = true)]
 	public abstract class Entity<TEntity> : IEntity<TEntity>
 		where TEntity : Entity<TEntity>, new()
 	{

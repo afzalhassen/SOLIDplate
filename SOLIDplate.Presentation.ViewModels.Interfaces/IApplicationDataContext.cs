@@ -2,7 +2,7 @@
 
 namespace SOLIDplate.Presentation.ViewModels.Interfaces
 {
-	public interface IApplicationDataContext
+    public interface IApplicationDataContext
 	{
 		IDictionary<string, dynamic> CurrentContext { get; }
 	}

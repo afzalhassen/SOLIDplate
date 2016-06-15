@@ -1,6 +1,6 @@
 ﻿namespace SOLIDplate.Domain.Entities.Interfaces
 {
-	public interface ICompositeEntity<TIdentityEntity1, TIdentityEntity2>
+    public interface ICompositeEntity<TIdentityEntity1, TIdentityEntity2>
 		where TIdentityEntity1 : class, new()
 		where TIdentityEntity2 : class, new()
 	{

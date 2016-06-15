@@ -2,7 +2,7 @@ using System.Runtime.Serialization;
 
 namespace SOLIDplate.Domain.Entities
 {
-	[DataContract(IsReference = true)]
+    [DataContract(IsReference = true)]
 	public class Address : Entity<Address>
 	{
 		[DataMember]

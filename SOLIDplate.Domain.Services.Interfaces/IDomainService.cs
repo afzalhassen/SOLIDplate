@@ -31,11 +31,5 @@ namespace SOLIDplate.Domain.Services.Interfaces
         /// </summary>
         /// <param name="id">An integer value that will be used to check for equality against the TEntity.Id property value.</param>
         void Delete(int id);
-        /// <summary>
-        /// Executes a stored user-composed query on the underlying repository's data-context.
-        /// </summary>
-        /// <param name="queryId">the Id of the stored EntityQuery to execute.</param>
-        /// <returns>A queryable collection of TEntity</returns>
-        IQueryable<TEntity> ExecuteQuery(int queryId);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace SOLIDplate.Domain.Entities
 {
-	[DataContract(IsReference = true)]
+    [DataContract(IsReference = true)]
 	public class Person : Entity<Person>
 	{
 		[DataMember]

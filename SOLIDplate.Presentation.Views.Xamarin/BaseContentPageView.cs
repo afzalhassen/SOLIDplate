@@ -1,13 +1,13 @@
+using SOLIDplate.Presentation.ViewModels;
 using System;
 using System.ComponentModel;
 using System.Threading.Tasks;
-using SOLIDplate.Presentation.ViewModels;
 using Xamarin.Forms;
 using ZeroFive.Forms.Images;
 
 namespace SOLIDplate.Presentation.Views.Xamarin
 {
-	public abstract class BaseContentPageView<TViewModel> : ContentPage
+    public abstract class BaseContentPageView<TViewModel> : ContentPage
 		where TViewModel : BaseViewModel, INotifyPropertyChanged
 	{
 		//Global Variables

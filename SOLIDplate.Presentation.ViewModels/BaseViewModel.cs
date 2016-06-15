@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SOLIDplate.Presentation.ViewModels
 {
-	public abstract class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged
 	{
 		//private readonly INetworkConnectivityService _networkConnectivityService;
 		protected readonly IApplicationDataContext ApplicationDataContext;

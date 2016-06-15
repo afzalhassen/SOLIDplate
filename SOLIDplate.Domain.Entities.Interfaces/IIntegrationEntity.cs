@@ -1,6 +1,6 @@
 ﻿namespace SOLIDplate.Domain.Entities.Interfaces
 {
-	public interface IIntegrationEntity<TEntity, TKeyType>
+    public interface IIntegrationEntity<TEntity, TKeyType>
 		where TEntity : class, IIntegrationEntity<TEntity, TKeyType>, new()
 	{
 		/// <summary>

@@ -4,7 +4,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace SOLIDplate.Json.Net
 {
-	public static class Util
+    public static class Util
 	{
 		public static JsonSerializerSettings CreateJsonSerializerSettings(IContractResolver contractResolver)
 		{

@@ -2,7 +2,7 @@
 
 namespace SOLIDplate.Domain.Entities.Interfaces
 {
-	public interface IEntity<TEntity> : IEquatable<TEntity>
+    public interface IEntity<TEntity> : IEquatable<TEntity>
 		   where TEntity : class, IEntity<TEntity>, new()
 	{
 		/// <summary>

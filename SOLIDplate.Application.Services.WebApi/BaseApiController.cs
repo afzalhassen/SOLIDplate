@@ -46,18 +46,18 @@ namespace SOLIDplate.Application.Services.WebApi
         }
 
         [HttpGet]
-        public HttpResponseMessage ExecuteQuery([FromUri]int queryId)
-        {
-            try
-            {
-                var queryEntities = DomainService.ExecuteQuery(queryId);
-                return Request.CreateResponse(HttpStatusCode.OK, queryEntities);
-            }
-            catch (Exception e)
-            {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
-            }
-        }
+        public abstract HttpResponseMessage ExecuteQuery([FromUri] int queryId);
+        //{
+        //    try
+        //    {
+        //        var queryEntities = DomainService.ExecuteQuery(queryId);
+        //        return Request.CreateResponse(HttpStatusCode.OK, queryEntities);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+        //    }
+        //}
 
         [HttpPost]
         public virtual HttpResponseMessage Post([FromBody]TEntity entity)

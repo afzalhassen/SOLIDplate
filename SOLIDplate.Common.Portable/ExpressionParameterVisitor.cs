@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace SOLIDplate.Common.Portable
 {
-	internal class ExpressionParameterVisitor : ExpressionVisitor
+    internal class ExpressionParameterVisitor : ExpressionVisitor
 	{
 		private readonly Dictionary<ParameterExpression, ParameterExpression> _expressionMap;
 

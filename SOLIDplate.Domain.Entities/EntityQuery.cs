@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 
 namespace SOLIDplate.Domain.Entities
 {
-	[DataContract(IsReference = true)]
+    [DataContract(IsReference = true)]
 	public class EntityQuery : Entity<EntityQuery>
 	{
 	    [DataMember]

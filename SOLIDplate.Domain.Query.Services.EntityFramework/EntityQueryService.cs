@@ -6,15 +6,14 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Reflection;
 
 namespace SOLIDplate.Domain.Query.Services.EntityFramework
 {
-    public class EntityQueryService : DomainService<EntityQuery>, IEntityQueryService
+    public class EntityQueryService : DomainService<EntityQuery, IUnitOfWork, IEntityRepository<EntityQuery>>, IEntityQueryService
     {
         public EntityQueryService(IUnitOfWork unitOfWork, IEntityRepository<EntityQuery> entityRepository)
-            : base(unitOfWork, entityRepository, null)
+            : base(unitOfWork, entityRepository)
         {
         }
 
@@ -55,17 +54,6 @@ namespace SOLIDplate.Domain.Query.Services.EntityFramework
             var result = Get(entityType).Where(entity => entity.EntityQueryCategoryId == entityQueryCategoryId);
 
             return result;
-        }
-
-
-
-        public override IQueryable<EntityQuery> ExecuteQuery(int queryId)
-        {
-            throw new NotSupportedException($"{nameof(ExecuteQuery)} operations are not supprted for the type: {EntityTypeName}");
-        }
-        protected override Expression<Func<EntityQuery, bool>> GeneratePredicateExpression(int entityQueryId)
-        {
-            throw new NotSupportedException($"{nameof(GeneratePredicateExpression)} operations are not supprted for the type: {EntityTypeName}");
         }
 
         public IEnumerable<Type> GetQueryableEntityTypes()

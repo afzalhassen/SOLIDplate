@@ -1,6 +1,6 @@
 ﻿namespace SOLIDplate.Domain.Entities
 {
-	public enum LogicalOperator
+    public enum LogicalOperator
 	{
 		None = 0,
 		And = 1,

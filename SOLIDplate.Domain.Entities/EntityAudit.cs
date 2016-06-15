@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 
 namespace SOLIDplate.Domain.Entities
 {
-	[DataContract(IsReference = true)]
+    [DataContract(IsReference = true)]
 	public class EntityAudit : Entity<EntityAudit>
 	{
 		[DataMember]

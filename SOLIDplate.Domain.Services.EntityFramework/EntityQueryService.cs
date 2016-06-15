@@ -6,15 +6,14 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Reflection;
 
 namespace SOLIDplate.Domain.Services.EntityFramework
 {
-    public class EntityQueryService : DomainService<EntityQuery>, IEntityQueryService
+    public class EntityQueryService : DomainService<EntityQuery, IUnitOfWork, IEntityRepository<EntityQuery>>, IEntityQueryService
     {
         public EntityQueryService(IUnitOfWork unitOfWork, IEntityRepository<EntityQuery> entityRepository)
-            : base(unitOfWork, entityRepository, null)
+            : base(unitOfWork, entityRepository)
         {
         }
 
@@ -43,19 +42,9 @@ namespace SOLIDplate.Domain.Services.EntityFramework
             return result;
         }
 
-        public IQueryable<EntityQuery> Get(Type entityType)
-        {
-            var result = Get().Where(entity => entity.EntityType == entityType);
+        public IQueryable<EntityQuery> Get(Type entityType) => Get().Where(entity => entity.EntityType == entityType);
 
-            return result;
-        }
-
-        public IQueryable<EntityQuery> Get(Type entityType, int entityQueryCategoryId)
-        {
-            var result = Get(entityType).Where(entity => entity.EntityQueryCategoryId == entityQueryCategoryId);
-
-            return result;
-        }
+        public IQueryable<EntityQuery> Get(Type entityType, int entityQueryCategoryId) => Get(entityType).Where(entity => entity.EntityQueryCategoryId == entityQueryCategoryId);
 
         public override void Add(EntityQuery entityToAdd)
         {
@@ -98,15 +87,6 @@ namespace SOLIDplate.Domain.Services.EntityFramework
         public override void Delete(int id)
         {
             throw new NotSupportedException($"{nameof(Delete)} operations are not supported for the type: {EntityTypeName}");
-        }
-
-        public override IQueryable<EntityQuery> ExecuteQuery(int queryId)
-        {
-            throw new NotSupportedException($"{nameof(ExecuteQuery)} operations are not supprted for the type: {EntityTypeName}");
-        }
-        protected override Expression<Func<EntityQuery, bool>> GeneratePredicateExpression(int entityQueryId)
-        {
-            throw new NotSupportedException($"{nameof(GeneratePredicateExpression)} operations are not supprted for the type: {EntityTypeName}");
         }
 
         public IEnumerable<Type> GetQueryableEntityTypes()

@@ -2,7 +2,7 @@
 
 namespace SOLIDplate.Domain.Integration.Services.Interfaces
 {
-	public interface IDomainIntegrationService<out TEntity, in TKeyType>
+    public interface IDomainIntegrationService<out TEntity, in TKeyType>
 		 where TEntity : class, new()
 	{
 		IEnumerable<TEntity> Get();

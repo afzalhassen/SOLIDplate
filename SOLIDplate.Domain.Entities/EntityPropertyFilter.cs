@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 
 namespace SOLIDplate.Domain.Entities
 {
-	[DataContract(IsReference = true)]
+    [DataContract(IsReference = true)]
 	public class EntityPropertyFilter : Entity<EntityPropertyFilter>
 	{
 		public EntityPropertyFilter()

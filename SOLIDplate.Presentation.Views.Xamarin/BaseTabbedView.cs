@@ -1,11 +1,11 @@
+using SOLIDplate.Presentation.ViewModels;
 using System.ComponentModel;
 using System.Threading.Tasks;
-using SOLIDplate.Presentation.ViewModels;
 using Xamarin.Forms;
 
 namespace SOLIDplate.Presentation.Views.Xamarin
 {
-	public abstract class BaseTabbedView<TViewModel> : TabbedPage
+    public abstract class BaseTabbedView<TViewModel> : TabbedPage
 		where TViewModel : BaseViewModel, INotifyPropertyChanged
 	{
 		protected TViewModel ViewModel => BindingContext as TViewModel;

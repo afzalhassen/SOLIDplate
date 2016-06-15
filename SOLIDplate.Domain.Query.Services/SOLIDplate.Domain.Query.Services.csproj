@@ -66,11 +66,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\SOLIDplate.AssemblyInfo.cs">
@@ -78,6 +73,7 @@
     </Compile>
     <Compile Include="DomainService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryableDomainService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\SOLIDplate.pfx">
@@ -106,6 +102,10 @@
     <ProjectReference Include="..\SOLIDplate.Domain.Entities\SOLIDplate.Domain.Entities.csproj">
       <Project>{7502EBCA-9760-4817-A6C9-6C21E95F58D2}</Project>
       <Name>SOLIDplate.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Infrastructure.Data.Interfaces\SOLIDplate.Infrastructure.Data.Interfaces.csproj">
+      <Project>{BF2BC546-AE84-48B3-B341-7629DCA583E2}</Project>
+      <Name>SOLIDplate.Infrastructure.Data.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\SOLIDplate.Infrastructure.Repository.Interfaces\SOLIDplate.Infrastructure.Repository.Interfaces.csproj">
       <Project>{F2EBD8C4-EF5C-4726-BD6E-3A125C77B0C6}</Project>

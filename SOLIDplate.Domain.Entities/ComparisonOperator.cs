@@ -1,6 +1,6 @@
 ﻿namespace SOLIDplate.Domain.Entities
 {
-	public enum ComparisonOperator
+    public enum ComparisonOperator
 	{
 		None = 0,
 		Between = 1,

@@ -11,7 +11,7 @@
     <iconUrl>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/073/15c/12be3e8.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Updated package tags</releaseNotes>
+    <releaseNotes>Removed unnecessary project references</releaseNotes>
     <copyright>Copyright © Afzal Hassen 2016</copyright>
     <tags>S.O.L.I.D Boilerplate Patterns Practices WebApi Controllers</tags>
   </metadata>

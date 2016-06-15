@@ -55,7 +55,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDplate.Application.Serv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93A87B19-A905-43E0-83F6-BB7400EE14E8}"
 	ProjectSection(SolutionItems) = preProject
-		SOLIDplate.Packages\HideFromNuget.bat = SOLIDplate.Packages\HideFromNuget.bat
 		PostBuildEvent.bat = PostBuildEvent.bat
 		PreBuildEvent.bat = PreBuildEvent.bat
 		SOLIDplate.Packages\PushToNuget.bat = SOLIDplate.Packages\PushToNuget.bat

@@ -1,8 +1,8 @@
+using SOLIDplate.Domain.Integration.Services.Interfaces;
 using System;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using SOLIDplate.Domain.Integration.Services.Interfaces;
 
 namespace SOLIDplate.Application.Services.WebApi
 {

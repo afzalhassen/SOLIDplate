@@ -2,7 +2,7 @@ using System.Runtime.Serialization;
 
 namespace SOLIDplate.Domain.Entities
 {
-	[DataContract]
+    [DataContract]
 	public class TypeOfContactNumber : LookupEntity<TypeOfContactNumber>
 	{
 	}
