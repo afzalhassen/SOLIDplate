@@ -10,7 +10,7 @@ using System.Reflection;
 
 namespace SOLIDplate.Domain.Query.Services.EntityFramework
 {
-    public class EntityQueryService : DomainService<EntityQuery, IUnitOfWork, IEntityRepository<EntityQuery>>, IEntityQueryService
+    public class EntityQueryService : DomainService<EntityQuery>, IEntityQueryService
     {
         public EntityQueryService(IUnitOfWork unitOfWork, IEntityRepository<EntityQuery> entityRepository)
             : base(unitOfWork, entityRepository)
