@@ -17,11 +17,30 @@ namespace SOLIDplate.Infrastructure.Data.EntityFramework
     public class DatabaseContext : DbContext, IDatabaseContext
     {
         private const int DefaultCommandTimeOut = 600;
+        private readonly string _dataConfigurationDllName;
+        private readonly string _dataConfigurationClassFullName;
         private readonly IEntityAuditService _entityAuditService;
 
-        public DatabaseContext(string databaseConnectionString, IEntityAuditService entityAuditService)
+        public DatabaseContext(string dataConfigurationDllName, string dataConfigurationClassFullName, string databaseConnectionString, IEntityAuditService entityAuditService)
             : base(databaseConnectionString)
         {
+            if (string.IsNullOrEmpty(dataConfigurationDllName))
+            {
+                throw new ArgumentNullException(nameof(dataConfigurationDllName));
+            }
+
+            if (string.IsNullOrEmpty(dataConfigurationClassFullName))
+            {
+                throw new ArgumentNullException(nameof(dataConfigurationClassFullName));
+            }
+
+            if (entityAuditService == null)
+            {
+                throw new ArgumentNullException(nameof(entityAuditService));
+            }
+
+            _dataConfigurationDllName = dataConfigurationDllName;
+            _dataConfigurationClassFullName = dataConfigurationClassFullName;
             _entityAuditService = entityAuditService;
             GetObjectContext().CommandTimeout = DefaultCommandTimeOut;
             Configuration.LazyLoadingEnabled = false;
@@ -129,25 +148,23 @@ namespace SOLIDplate.Infrastructure.Data.EntityFramework
             base.OnModelCreating(modelBuilder);
         }
 
-        private static void AddConfigurations(DbModelBuilder modelBuilder)
+        private void AddConfigurations(DbModelBuilder modelBuilder)
         {
             if (modelBuilder == null)
             {
                 throw new ArgumentNullException(nameof(modelBuilder));
             }
 
-            const string dataConfigurationDllName = "DataConfigurationDllName";
-            const string dataConfigurationClassFullName = "DataConfigurationClassFullName";
             var appSettings = ConfigurationManager.AppSettings;
 
-            if (!appSettings.AllKeys.Contains(dataConfigurationDllName) ||
-                !appSettings.AllKeys.Contains(dataConfigurationClassFullName))
+            if (!appSettings.AllKeys.Contains(_dataConfigurationDllName) ||
+                !appSettings.AllKeys.Contains(_dataConfigurationClassFullName))
             {
-                var message = $"Either '{dataConfigurationDllName}' or '{dataConfigurationClassFullName}' or both keys cannot be found in the appsettings NameValueCollection of the application's configuration file.";
+                var message = $"Either '{_dataConfigurationDllName}' or '{_dataConfigurationClassFullName}' or both keys cannot be found in the appsettings NameValueCollection of the application's configuration file.";
                 throw new SettingsPropertyNotFoundException(message);
             }
 
-            var typeDescriptor = $"{appSettings.Get(dataConfigurationClassFullName)},{appSettings.Get(dataConfigurationDllName)}";
+            var typeDescriptor = $"{appSettings.Get(_dataConfigurationClassFullName)},{appSettings.Get(_dataConfigurationDllName)}";
             var baseType = typeof(EntityConfiguration<,>);
             var dataConfigurationType = Type.GetType(typeDescriptor);
 

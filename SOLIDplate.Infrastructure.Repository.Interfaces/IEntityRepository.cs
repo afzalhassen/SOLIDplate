@@ -123,44 +123,5 @@ namespace SOLIDplate.Infrastructure.Repository.Interfaces
         /// Predicate to match specific instances of TEntity.
         /// </param>
         void Delete(Expression<Func<TEntity, bool>> predicate);
-
-        /// <summary>
-        /// All instances of TEntity.
-        /// </summary>
-        /// <returns>All instances of TEntity</returns>
-        IQueryable<TEntity> AllUnwrapped();
-
-        /// <summary>
-        /// All instances of TEntity matching search.
-        /// </summary>
-        /// <param name="predicate">
-        /// The predicate expression to filter instances.
-        /// </param>
-        /// <returns>
-        /// All matching instances of type TEntity
-        /// </returns>
-        IQueryable<TEntity> AllUnwrapped(Expression<Func<TEntity, bool>> predicate);
-
-        /// <summary>
-        /// Paged All based on a predicate.
-        /// </summary>
-        /// <param name="predicate">The predicate.</param>
-        /// <param name="pageSize">Number of records per page.</param>
-        /// <param name="pageIndex">)Based index of the page.</param>
-        /// <returns>Collection per page</returns>
-        IQueryable<TEntity> AllUnwrapped(Expression<Func<TEntity, bool>> predicate, int pageSize, int pageIndex);
-
-        /// <summary>
-        /// Paged All based on a predicate with sorting.
-        /// </summary>
-        /// <param name="predicate">The predicate.</param>
-        /// <param name="pageSize">Size of the page.</param>
-        /// <param name="pageIndex">Index of the page.</param>
-        /// <param name="orderingField">The order field.</param>
-        /// <param name="orderingDirection">The order direction.</param>
-        /// <returns>
-        /// Collection per page
-        /// </returns>
-        IQueryable<TEntity> AllUnwrapped(Expression<Func<TEntity, bool>> predicate, int pageSize, int pageIndex, string orderingField, string orderingDirection);
     }
 }

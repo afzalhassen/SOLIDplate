@@ -9,4 +9,4 @@ using System.Resources;
 [assembly: AssemblyTrademark("SOLIDplate")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en")]
-[assembly: AssemblyVersion("1.0.0.4")]
+[assembly: AssemblyVersion("1.0.0.6")]

@@ -6,5 +6,7 @@ namespace SOLIDplate.Infrastructure.Data.EntityFramework.Interfaces
     {
         string DatabaseConnectionString { get; }
         IEntityAuditService EntityAuditService { get; }
+        string DataConfigurationDllName { get; }
+        string DataConfigurationClassFullName { get; }
     }
 }

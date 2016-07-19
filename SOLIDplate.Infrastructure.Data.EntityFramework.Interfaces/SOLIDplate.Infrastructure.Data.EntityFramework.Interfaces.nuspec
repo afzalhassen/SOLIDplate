@@ -11,7 +11,7 @@
     <iconUrl>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/073/15c/12be3e8.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Removed unnecessary project references</releaseNotes>
+    <releaseNotes>Parameterised the dependency of the dataConfigurationDllName and dataConfigurationClassFullName string values to be read from the application config file. Version increment.</releaseNotes>
     <copyright>Copyright © Afzal Hassen 2016</copyright>
     <tags>S.O.L.I.D Boilerplate Patterns Practices Data UnitOfWork EntityFramework DatabaseContext</tags>
   </metadata>
