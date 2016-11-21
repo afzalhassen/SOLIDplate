@@ -17,7 +17,7 @@ namespace SOLIDplate.Domain.Services.EntityFramework
         {
         }
 
-        public override IQueryable<EntityQuery> Get()
+        public override IEnumerable<EntityQuery> Get()
         {
             return Repository.AllUnwrapped()
                              .Include(entity => entity.EntityQueryCategory)
@@ -42,9 +42,9 @@ namespace SOLIDplate.Domain.Services.EntityFramework
             return result;
         }
 
-        public IQueryable<EntityQuery> Get(Type entityType) => Get().Where(entity => entity.EntityType == entityType);
+        public IEnumerable<EntityQuery> Get(Type entityType) => Get().Where(entity => entity.EntityType == entityType);
 
-        public IQueryable<EntityQuery> Get(Type entityType, int entityQueryCategoryId) => Get(entityType).Where(entity => entity.EntityQueryCategoryId == entityQueryCategoryId);
+        public IEnumerable<EntityQuery> Get(Type entityType, int entityQueryCategoryId) => Get(entityType).Where(entity => entity.EntityQueryCategoryId == entityQueryCategoryId);
 
         public override void Add(EntityQuery entityToAdd)
         {
@@ -187,7 +187,7 @@ namespace SOLIDplate.Domain.Services.EntityFramework
             return result;
         }
 
-        public IQueryable<EntityAudit> GetEntityAudits(int entityId)
+        public IEnumerable<EntityAudit> GetEntityAudits(int entityId)
         {
             throw new NotImplementedException();
         }

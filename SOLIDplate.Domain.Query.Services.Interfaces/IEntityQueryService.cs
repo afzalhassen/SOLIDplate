@@ -1,7 +1,6 @@
 ﻿using SOLIDplate.Domain.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace SOLIDplate.Domain.Query.Services.Interfaces
 {
@@ -19,20 +18,20 @@ namespace SOLIDplate.Domain.Query.Services.Interfaces
         /// </summary>
         /// <param name="entityType"></param>
         /// <returns></returns>
-        IQueryable<EntityQuery> Get(Type entityType);
+        IEnumerable<EntityQuery> Get(Type entityType);
         /// <summary>
         /// 
         /// </summary>
         /// <param name="entityType"></param>
         /// <param name="entityQueryCategoryId"></param>
         /// <returns></returns>
-        IQueryable<EntityQuery> Get(Type entityType, int entityQueryCategoryId);
+        IEnumerable<EntityQuery> Get(Type entityType, int entityQueryCategoryId);
         /// <summary>
         /// 
         /// </summary>
         /// <param name="entityId"></param>
         /// <returns></returns>
-        IQueryable<EntityAudit> GetEntityAudits(int entityId);
+        IEnumerable<EntityAudit> GetEntityAudits(int entityId);
         /// <summary>
         /// 
         /// </summary>

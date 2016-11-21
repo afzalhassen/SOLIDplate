@@ -1,6 +1,6 @@
 ﻿using SOLIDplate.Domain.Services.Interfaces;
 using SOLIDplate.Infrastructure.Repository.Interfaces;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace SOLIDplate.Domain.Services
 {
@@ -18,7 +18,7 @@ namespace SOLIDplate.Domain.Services
             Repository = entityRepository;
         }
 
-        public abstract IQueryable<TEntity> Get();
+        public abstract IEnumerable<TEntity> Get();
 
         public abstract TEntity Get(int id);
 

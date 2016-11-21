@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
 
 namespace SOLIDplate.Domain.Query.Services.Interfaces
 {
@@ -8,8 +8,8 @@ namespace SOLIDplate.Domain.Query.Services.Interfaces
         /// <summary>
         /// Gets a queryable collection of TEntity
         /// </summary>
-        /// <returns>A queryable collection of TEntity</returns>
-        IQueryable<TEntity> Get();
+        /// <returns>An enumerable collection of TEntity</returns>
+        IEnumerable<TEntity> Get();
         /// <summary>
         /// Gets an instance of TEntity.
         /// </summary>

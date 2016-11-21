@@ -5,6 +5,7 @@ using SOLIDplate.Domain.Services.Interfaces;
 using SOLIDplate.Infrastructure.Data.EntityFramework.Interfaces;
 using SOLIDplate.Infrastructure.Repository.EntityFramework.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -21,7 +22,7 @@ namespace SOLIDplate.Domain.Services.EntityFramework
             _entityQueryService = entityQueryService;
         }
 
-        public abstract IQueryable<TEntity> ExecuteQuery(int queryId);
+        public abstract IEnumerable<TEntity> ExecuteQuery(int queryId);
 
         protected Expression<Func<TEntity, bool>> GeneratePredicateExpression(EntityQuery entityQuery)
         {

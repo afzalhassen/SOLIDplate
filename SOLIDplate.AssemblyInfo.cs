@@ -5,8 +5,8 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyCompany("Afzal Hassen")]
-[assembly: AssemblyCopyright("Copyright © Afzal Hassen 2016")]
+[assembly: AssemblyCopyright("© Afzal Hassen 2016")]
 [assembly: AssemblyTrademark("SOLIDplate")]
-[assembly: AssemblyCulture("")]
+[assembly: AssemblyCulture("en-ZA")]
 [assembly: NeutralResourcesLanguage("en")]
-[assembly: AssemblyVersion("1.0.0.6")]
+[assembly: AssemblyVersion("1.0.0.7")]
