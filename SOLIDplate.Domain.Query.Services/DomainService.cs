@@ -1,6 +1,9 @@
 ﻿using SOLIDplate.Domain.Query.Services.Interfaces;
 using SOLIDplate.Infrastructure.Repository.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace SOLIDplate.Domain.Query.Services
 {
@@ -19,6 +22,8 @@ namespace SOLIDplate.Domain.Query.Services
         }
 
         public abstract IEnumerable<TEntity> Get();
+        public abstract IQueryable<TEntity> GetQueryable();
+        public abstract IQueryable<TEntity> GetQueryable(Expression<Func<TEntity, bool>> predicate);
         public abstract TEntity Get(int id);
     }
 }

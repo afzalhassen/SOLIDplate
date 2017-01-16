@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 
 namespace SOLIDplate.Domain.Query.Services.EntityFramework
@@ -131,6 +132,14 @@ namespace SOLIDplate.Domain.Query.Services.EntityFramework
         }
 
         public IEnumerable<EntityAudit> GetEntityAudits(int entityId)
+        {
+            throw new NotImplementedException();
+        }
+        public override IQueryable<EntityQuery> GetQueryable()
+        {
+            throw new NotImplementedException();
+        }
+        public override IQueryable<EntityQuery> GetQueryable(Expression<Func<EntityQuery, bool>> predicate)
         {
             throw new NotImplementedException();
         }

@@ -72,6 +72,7 @@
     <Compile Include="..\SOLIDplate.AssemblyInfo.cs">
       <Link>Properties\SOLIDplate.AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="IAggregateDomainService.cs" />
     <Compile Include="IDomainService.cs" />
     <Compile Include="IEntityQueryService.cs" />
     <Compile Include="IQueryableDomainService.cs" />

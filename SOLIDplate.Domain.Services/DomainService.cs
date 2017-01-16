@@ -1,6 +1,9 @@
 ﻿using SOLIDplate.Domain.Services.Interfaces;
 using SOLIDplate.Infrastructure.Repository.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace SOLIDplate.Domain.Services
 {
@@ -19,15 +22,12 @@ namespace SOLIDplate.Domain.Services
         }
 
         public abstract IEnumerable<TEntity> Get();
-
+        public abstract IQueryable<TEntity> GetQueryable();
+        public abstract IQueryable<TEntity> GetQueryable(Expression<Func<TEntity, bool>> predicate);
         public abstract TEntity Get(int id);
-
         public abstract void Add(TEntity entityToAdd);
-
         public abstract void Update(TEntity entityWithUpdates);
-
         public abstract void Delete(int id);
-
         protected abstract void PrimeEntityForPersistance(TEntity entityToPrime, bool primeForAdd);
         protected abstract void ValidateEntity(TEntity entity);
     }

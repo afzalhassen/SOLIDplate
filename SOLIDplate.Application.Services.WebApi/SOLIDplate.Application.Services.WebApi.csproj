@@ -90,9 +90,17 @@
     <None Include="SOLIDplate.Application.Services.WebApi.nuspec" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Domain.Command.Services.Interfaces\SOLIDplate.Domain.Command.Services.Interfaces.csproj">
+      <Project>{3cdad1dd-9e21-4c6c-9911-3b0456aad720}</Project>
+      <Name>SOLIDplate.Domain.Command.Services.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SOLIDplate.Domain.Integration.Services.Interfaces\SOLIDplate.Domain.Integration.Services.Interfaces.csproj">
       <Project>{361666BD-651C-41CB-88C3-5C7C45998DAE}</Project>
       <Name>SOLIDplate.Domain.Integration.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Domain.Query.Services.Interfaces\SOLIDplate.Domain.Query.Services.Interfaces.csproj">
+      <Project>{06e04045-bb71-4459-a890-60ee6ce446da}</Project>
+      <Name>SOLIDplate.Domain.Query.Services.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\SOLIDplate.Domain.Services.Interfaces\SOLIDplate.Domain.Services.Interfaces.csproj">
       <Project>{0C75E500-6905-48C9-8668-17304EF94447}</Project>

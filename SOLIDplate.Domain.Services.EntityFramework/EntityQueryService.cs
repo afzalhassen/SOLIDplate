@@ -6,11 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 
 namespace SOLIDplate.Domain.Services.EntityFramework
 {
-    public class EntityQueryService : DomainService<EntityQuery, IUnitOfWork, IEntityRepository<EntityQuery>>, IEntityQueryService
+    public class EntityQueryService : DomainService<EntityQuery>, IEntityQueryService
     {
         public EntityQueryService(IUnitOfWork unitOfWork, IEntityRepository<EntityQuery> entityRepository)
             : base(unitOfWork, entityRepository)
@@ -190,6 +191,14 @@ namespace SOLIDplate.Domain.Services.EntityFramework
         public IEnumerable<EntityAudit> GetEntityAudits(int entityId)
         {
             throw new NotImplementedException();
+        }
+        public override IQueryable<EntityQuery> GetQueryable()
+        {
+            return Repository.AllUnwrapped();
+        }
+        public override IQueryable<EntityQuery> GetQueryable(Expression<Func<EntityQuery, bool>> predicate)
+        {
+            return Repository.AllUnwrapped(predicate);
         }
     }
 }

@@ -78,6 +78,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SOLIDplate.Domain.Command.Services.Interfaces\SOLIDplate.Domain.Command.Services.Interfaces.csproj">
+      <Project>{3cdad1dd-9e21-4c6c-9911-3b0456aad720}</Project>
+      <Name>SOLIDplate.Domain.Command.Services.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SOLIDplate.Domain.Entities.Interfaces\SOLIDplate.Domain.Entities.Interfaces.csproj">
       <Project>{5be9c8aa-a9a4-4d5d-97fc-c6db5d6eab4f}</Project>
       <Name>SOLIDplate.Domain.Entities.Interfaces</Name>
@@ -85,6 +89,10 @@
     <ProjectReference Include="..\SOLIDplate.Domain.Entities\SOLIDplate.Domain.Entities.csproj">
       <Project>{7502EBCA-9760-4817-A6C9-6C21E95F58D2}</Project>
       <Name>SOLIDplate.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Domain.Query.Services.Interfaces\SOLIDplate.Domain.Query.Services.Interfaces.csproj">
+      <Project>{06E04045-BB71-4459-A890-60EE6CE446DA}</Project>
+      <Name>SOLIDplate.Domain.Query.Services.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

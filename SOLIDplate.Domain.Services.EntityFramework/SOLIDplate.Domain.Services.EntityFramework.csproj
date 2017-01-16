@@ -100,6 +100,14 @@
       <Project>{C5B0E75D-E045-44D9-AE22-AA46E3E72D14}</Project>
       <Name>SOLIDplate.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Domain.Command.Services.Interfaces\SOLIDplate.Domain.Command.Services.Interfaces.csproj">
+      <Project>{3CDAD1DD-9E21-4C6C-9911-3B0456AAD720}</Project>
+      <Name>SOLIDplate.Domain.Command.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOLIDplate.Domain.Query.Services.Interfaces\SOLIDplate.Domain.Query.Services.Interfaces.csproj">
+      <Project>{06E04045-BB71-4459-A890-60EE6CE446DA}</Project>
+      <Name>SOLIDplate.Domain.Query.Services.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SOLIDplate.Domain.Services.Interfaces\SOLIDplate.Domain.Services.Interfaces.csproj">
       <Project>{0c75e500-6905-48c9-8668-17304ef94447}</Project>
       <Name>SOLIDplate.Domain.Services.Interfaces</Name>

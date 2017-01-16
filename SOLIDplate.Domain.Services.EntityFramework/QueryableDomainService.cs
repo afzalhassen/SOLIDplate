@@ -12,7 +12,7 @@ using System.Reflection;
 
 namespace SOLIDplate.Domain.Services.EntityFramework
 {
-    public abstract class QueryableDomainService<TEntity> : DomainService<TEntity, IUnitOfWork, IEntityRepository<TEntity>>, IQueryableDomainService<TEntity>
+    public abstract class QueryableDomainService<TEntity> : DomainService<TEntity>, IQueryableDomainService<TEntity>
           where TEntity : class, new()
     {
         private readonly IEntityQueryService _entityQueryService;

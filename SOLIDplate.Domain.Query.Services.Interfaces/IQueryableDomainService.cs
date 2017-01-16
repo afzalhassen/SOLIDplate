@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace SOLIDplate.Domain.Query.Services.Interfaces
 {
-    public interface IQueryableDomainService<out TEntity> : IDomainService<TEntity>
+    public interface IQueryableDomainService<TEntity> : IDomainService<TEntity>
         where TEntity : class, new()
     {
 

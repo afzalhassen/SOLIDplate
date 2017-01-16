@@ -6,13 +6,13 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
+    <licenseUrl>https://github.com/afzalhassen/SOLIDplate/blob/master/license.txt</licenseUrl>
     <!--<projectUrl>https://github.com/afzalhassen/SOLIDplate</projectUrl>-->
-    <iconUrl>https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/073/15c/12be3e8.jpg</iconUrl>
+    <iconUrl>https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9QP33tMf6IvsZ-5Jn-vR7lSZ3F6uIqzgR2K1A3ivSds2PRXj5G_26Gg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>None. Version increment.</releaseNotes>
-    <copyright>Copyright © Afzal Hassen 2016</copyright>
+    <copyright>Copyright © 2017 Afzal Hassen (MIT License)</copyright>
     <tags>S.O.L.I.D Boilerplate Patterns Practices Repository UnitOfWork</tags>
   </metadata>
 </package>
