@@ -73,9 +73,6 @@
     <Compile Include="StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\SOLIDplate.pfx">
-      <Link>SOLIDplate.pfx</Link>
-    </None>
     <None Include="SOLIDplate.Common.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

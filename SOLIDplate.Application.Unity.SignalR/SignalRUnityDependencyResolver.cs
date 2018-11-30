@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNet.SignalR;
-using Microsoft.Practices.Unity;
 using System;
 using System.Collections.Generic;
+using Unity;
 
 namespace SOLIDplate.Application.Unity.SignalR
 {

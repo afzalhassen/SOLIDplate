@@ -8,6 +8,8 @@ using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.Validation;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Transactions;
@@ -128,7 +130,10 @@ namespace SOLIDplate.Infrastructure.Data.EntityFramework
             const EntityState entityState = EntityState.Added | EntityState.Deleted | EntityState.Modified | EntityState.Unchanged;
             foreach (var objectStateEntry in objectContext.ObjectStateManager
                                             .GetObjectStateEntries(entityState)
-                                            .Where(objectStateEntry => objectStateEntry.State != EntityState.Detached && objectStateEntry.Entity != null))
+                                            .Where(objectStateEntry => objectStateEntry.State != EntityState.Detached && 
+                                                                       objectStateEntry.Entity != null
+                                                  )
+                    )
             {
                 objectContext.Detach(objectStateEntry.Entity);
             }

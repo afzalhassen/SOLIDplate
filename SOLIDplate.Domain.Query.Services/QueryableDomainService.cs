@@ -26,7 +26,7 @@ namespace SOLIDplate.Domain.Query.Services
 
         protected virtual Expression<Func<TEntity, bool>> GeneratePredicateExpression(int entityQueryId) => GeneratePredicateExpression(_entityQueryService.Get(entityQueryId, typeof(TEntity)));
 
-        private Expression<Func<TEntity, bool>> GeneratePredicateExpression(EntityQuery entityQuery)
+        private static Expression<Func<TEntity, bool>> GeneratePredicateExpression(EntityQuery entityQuery)
         {
             var entityPropertyFilters = entityQuery.EntityPropertyFilters.OrderBy(epf => epf.Id);
             var firstEntityPropertyFilter = entityPropertyFilters.First(epf => epf.LogicalOperator == LogicalOperator.None);

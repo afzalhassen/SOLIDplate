@@ -63,9 +63,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <None Include="..\SOLIDplate.pfx">
-      <Link>SOLIDplate.pfx</Link>
-    </None>
     <None Include="SOLIDplate.Presentation.ViewModels.Interfaces.nuspec" />
   </ItemGroup>
   <ItemGroup>

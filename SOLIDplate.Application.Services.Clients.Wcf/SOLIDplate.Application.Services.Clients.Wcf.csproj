@@ -72,9 +72,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\SOLIDplate.pfx">
-      <Link>SOLIDplate.pfx</Link>
-    </None>
     <None Include="packages.config" />
     <None Include="SOLIDplate.Application.Services.Clients.Wcf.nuspec" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.SignalR.Hubs;
-using Microsoft.Practices.Unity;
 using System;
+using Unity;
 
 namespace SOLIDplate.Application.Unity.SignalR
 {
