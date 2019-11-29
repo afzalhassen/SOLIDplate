@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDplate.Infrastructure.Data.EntityFramework", "SOLIDplate.Infrastructure.Data.EntityFramework\SOLIDplate.Infrastructure.Data.EntityFramework.csproj", "{DAF4536C-F863-490F-827C-E97BB44DDBF4}"
 EndProject
@@ -59,6 +59,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		PreBuildEvent.bat = PreBuildEvent.bat
 		SOLIDplate.Packages\PushToNuget.bat = SOLIDplate.Packages\PushToNuget.bat
 		SOLIDplate.Packages\RemovePreviousVersions.bat = SOLIDplate.Packages\RemovePreviousVersions.bat
+		SOLIDplate.AssemblyInfo.cs = SOLIDplate.AssemblyInfo.cs
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDplate.Application.Unity", "SOLIDplate.Application.Unity\SOLIDplate.Application.Unity.csproj", "{31D14DD3-90A4-47D7-B636-026F71C5728F}"
@@ -515,5 +516,8 @@ Global
 		{14103467-B8C9-46BD-9C64-0403327892BA} = {BC72737F-228B-4E40-888E-E28352AC651D}
 		{52A2E811-5622-4FD7-B5D7-A4AF033CBD85} = {9321B1AC-F3BE-4E02-9DE3-9DAB792A9D2A}
 		{084146C0-180A-4869-86D8-8A4EB7AA9085} = {9321B1AC-F3BE-4E02-9DE3-9DAB792A9D2A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {996F4EDF-352E-4DC3-87B7-4F16F1E22329}
 	EndGlobalSection
 EndGlobal
