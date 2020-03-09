@@ -87,7 +87,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="SOLIDplate.Application.Services.Signalr.Hubs.Interfaces.nuspec" />
   </ItemGroup>

@@ -86,7 +86,6 @@
     <Compile Include="SignalRContractResolver.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="SOLIDplate.Application.Services.Signalr.nuspec" />
   </ItemGroup>
